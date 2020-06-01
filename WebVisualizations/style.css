@@ -1,0 +1,33 @@
+
+.main_background{
+    background-color: black;
+}
+
+.text_background{
+    background-color: gainsboro;
+}
+
+.home_description_title {
+    color: gainsboro;
+}
+
+.home_description {
+    color: lightgray
+} 
+
+.home_imagetag {
+    font-size: 5px;
+    color: gray;
+}
+
+.navbar-dark .navbar-brand {
+    color: yellowgreen;
+}
+
+.data_description_title {
+    color: black;
+}
+
+.table-condensed{
+    font-size: small ;
+}
