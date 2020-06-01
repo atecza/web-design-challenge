@@ -3,8 +3,16 @@
     background-color: black;
 }
 
-.text_background{
-    background-color: gainsboro;
+.main_background2{
+    background-color: rgb(165, 164, 164);
+}
+
+.row_background{
+    background-color: white;
+}
+
+.subtitle_color{
+    color:teal
 }
 
 .home_description_title {

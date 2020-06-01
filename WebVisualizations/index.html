@@ -34,17 +34,17 @@
                         Plots
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="https://fivethirtyeight.com/features/after-minneapolis-can-trumps-law-and-order-strategy-work/">Vis1</a>
-                    <a class="dropdown-item" href="#">Vis2</a>
-                    <a class="dropdown-item" href="#">Vis3</a>
-                    <a class="dropdown-item" href="#">Vis4</a>
+                    <a class="dropdown-item" href="#">Max Temp</a>
+                    <a class="dropdown-item" href="#">Humidity</a>
+                    <a class="dropdown-item" href="#">Cloudiness</a>
+                    <a class="dropdown-item" href="#">Wind Speed</a>
                     </div>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <div class="container-fluid p-3 main_background">
+    <div id = "home_c1" class="container-fluid p-3 main_background">
         <div class="row">
             <div class="col-5 mt-4 mb-4 text-center">
                 <figure class="figure">
@@ -65,6 +65,75 @@
                     API calls for WeatherPy were conducted using python. Data was cleaned with the Pandas library
                     and all plots were created using MatPlotLib.  
                 </p>
+            </div>
+        </div>
+    </div>
+
+    <div id = "home_c2" class="container-fluid p-3 main_background2">
+        <div id = "home_c2r1" class="row ml-4 mr-4">
+            <div class="col-12 col-md-8 pt-4 pb-4 mr-4 mb-4 mb-md-1 row_background">
+                <div class="col-12 pb-3 border-bottom"> 
+                    <p class = "h1 subtitle_color" style="font-size:3vw;">
+                        Graphs At A Glance
+                    </p>
+                </div>
+                <div class="col-12 pt-3"> 
+                    <div class="row no-gutters">
+                        <div class="col ml-2 mr-2">
+                            <img class="img-responsive img-fluid" src="Visualizations/LatTempScatter.png">
+                        </div>
+                        <div class="col-6 mr-2">
+                            <p class = "text-justify" style="font-size:1.5vw;">
+                                WeatherPy Visualizations represent simple scatter plots 
+                                displaying the correlation between latitude and a number of 
+                                weather variables including: temperature, cloudiness, wind speed,
+                                and humidity. Source data for the WeatherPy project can be found under
+                                the 'Data' tab.
+                            </p>
+                        </div>
+                        <div class="col-12 ml-2 mr-4">
+                            <p class = "text-justify" style="font-size:1.5vw;">
+                                For a more in-depth look at relationships simply click the corresponding
+                                graph, or navigate to the graph via the 'Plot' tab in the navigation menu. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col pt-4 mb-sm-5 row_background">
+                <div id = "home_c2r2" class="row">
+                    <div class="col-12 pb-3 border-bottom"> 
+                        <p class = "h1 subtitle_color" style="font-size:3vw;">
+                            Visualizations
+                        </p>
+                    </div>
+                    <div class="col pt-4 pb-3">
+                        <a href="https://www.google.com/" title="">
+                        <img class="img-responsive img-fluid" src="Visualizations/LatTempScatter.png">
+                        </a>
+                    </div>
+
+                    <div class="col pt-4 pb-3">
+                        <a href="https://www.google.com/" title="">
+                        <img class="img-responsive img-fluid" src="Visualizations/LatHumScatter.png">
+                        </a>
+                    </div>
+
+                    <div class="w-100"></div>
+
+                    <div class="col pb-4 pb-md-0">
+                        <a href="https://www.google.com/" title="">
+                        <img class="img-responsive img-fluid" src="Visualizations/LatWndScatter.png">
+                        </a>
+                    </div>
+
+                    <div class="col pb-4 pb-md-0">
+                        <a href="https://www.google.com/" title="">
+                        <img class="img-responsive img-fluid" src="Visualizations/LatCldScatter.png">
+                        </a>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
