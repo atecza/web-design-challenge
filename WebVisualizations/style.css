@@ -1,4 +1,17 @@
 
+
+@media (min-width: 576px){
+    .vis_box{
+        margin-bottom: 250px;
+    }
+}
+
+
+.vis_border {
+    border-width:3px !important;
+}
+
+
 .main_background{
     background-color: black;
 }
@@ -39,3 +52,4 @@
 .table-condensed{
     font-size: small ;
 }
+

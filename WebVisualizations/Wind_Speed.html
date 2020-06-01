@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>WeatherPy Dashboard</title>
+  <title>Wind Speed</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -12,8 +12,8 @@
     
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">
-            <img src="Visualizations/ATlogo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
-            WeatherPy Data Project
+        <img src="Visualizations/ATlogo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+            Weather Data
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -27,7 +27,7 @@
                     <a class="nav-link" href="#">Comparisons</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Data.html">Data</a>
+                    <a class="nav-link" href="#">Data</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -44,63 +44,32 @@
         </div>
     </nav>
 
-    <div id = "home_c1" class="container-fluid p-3 main_background">
-        <div class="row">
-            <div class="col-5 mt-4 mb-4 text-center">
-                <figure class="figure">
-                    <img src="Visualizations/earth-wind2.png" class="figure-img img-fluid" alt="...">
-                    <figcaption class="figure-caption text-left home_imagetag">Fig.1 Image sourced from https://earth.nullschool.net/</figcaption>
-                </figure>
-            </div>
-            <div class="col my-auto mr-4">
-                <p class = " h2 home_description_title" style="font-size:4vw;"> ABOUT </p>
-                <p class = "text-justify home_description" style="font-size:1.5vw;">    
-                    The WeatherPy project was undertaken through the University of Denver's
-                    Data Science Bootcamp. WeatherPy was created to evaluate the impact of latitude
-                    on weather conditions around the globe. Relying on data from the 
-                    OpenWeatherMap API, WeatherPy randomly sampled over 600 cities
-                    on a single day (May 20th, 2020).
-                </p>
-                <p class = "text-justify home_description" style="font-size:1.5vw;">
-                    API calls for WeatherPy were conducted using python. Data was cleaned with the Pandas library
-                    and all plots were created using MatPlotLib.  
-                </p>
-            </div>
-        </div>
-    </div>
-
     <div id = "home_c2" class="container-fluid p-3 main_background2">
-        <div id = "home_c2r1" class="row flex-fill ml-4 mr-4">
+        <div id = "home_c2r1" class="row ml-4 mr-4">
             <div class="col-12 col-md-8 pt-4 pb-4 mr-4 mb-4 mb-md-1 row_background">
                 <div class="col-12 pb-3 border-bottom"> 
                     <p class = "h1 subtitle_color" style="font-size:3vw;">
-                        Graphs At A Glance
+                        Wind Speed
                     </p>
                 </div>
-                <div class="col-12 d-flex flex-column pt-3"> 
-                    <div class="row flex-fill no-gutters">
-                        <div class="col ml-2 mr-2 d-flex flex-column">
-                            <img class="img-responsive img-fluid" src="Visualizations/LatTempScatter.png">
+                <div class="col-12 pt-3"> 
+                    <div class="row">
+                        <div class="col ml-2 mr-2 text-center">
+                            <img class="img-responsive img-fluid mx-auto" src="Visualizations/LatWndScatter.png">
                         </div>
-                        <div class="col-6 mr-2 d-flex flex-column">
-                            <p class = "text-justify" style="font-size:1.5vw;">
-                                WeatherPy Visualizations represent simple scatter plots 
-                                displaying the correlation between latitude and a number of 
-                                weather variables including: temperature, cloudiness, wind speed,
-                                and humidity. Source data for the WeatherPy project can be found under
-                                the 'Data' tab.
-                            </p>
-                        </div>
-                        <div class="col-12 ml-2 mr-4 d-flex flex-column">
-                            <p class = "text-justify" style="font-size:1.5vw;">
-                                For a more in-depth look at relationships simply click the corresponding
-                                graph, or navigate to the graph via the 'Plot' tab in the navigation menu. 
+                        
+                        <div class="col-12 ml-2 mr-4">
+                            <p style="font-size:1.5vw;">
+                                As expected, the weather becomes significantly warmer as one approaches the equator
+                                (0 Deg. Latitude). More interestingly, however, is the fact that the southern hemisphere tends to be
+                                warmer this time of year than the northern hemisphere. This may be due to the tile of the earth at 
+                                the time of the year this data was gathered.  
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col mb-sm-5 pt-4 pb-sm-3 row_background border border-dark vis_border">
+            <div class="col vis_box pt-4 pb-sm-3 row_background border border-dark vis_border">
                 <div id = "home_c2r2" class="row">
                     <div class="col-12 pb-3 border-bottom"> 
                         <p class = "h1 subtitle_color" style="font-size:3vw;">
